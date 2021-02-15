@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class FibonacciNumber{
+          public static void main(String[] args){
+                     Scanner sc=new Scanner(System.in);
+                    int nthTerm=sc.nextInt();
+                     long first=0,second=1,temp=0;
+                     for(int i=1;i<nthTerm;i++)
+                     {
+                            temp=first+second;
+                            first=second;
+                            second=temp;
+                      }
+             
+                System.out.println(second);      
+
+          }
+}
